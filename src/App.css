@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+}
+
+.logo {
+    position: relative; /* Tornar o posicionamento relativo para que possamos posicionar a imagem dentro dele */
+}
+
+.logo h2 {
+    width: auto;
+    height: 70px;
+    color: wheat;
+    position: absolute; /* Tornar o posicionamento absoluto para que possamos definir as coordenadas */
+    top: 5px; /* Colocar a imagem no topo */
+    right: 45px; /* Colocar a imagem à direita */
+}
+
+
+.logo h2 span {
+  color: red;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.content .col-6 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../public/assets/images/back4.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+.content .block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .block .container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .block .container .perfil {
+  width: 125px ;
+  height: 125px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.content .block .container .perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.content .block .container button, .content .block .container .custom {
+    width: 100%;
+    max-width: 475px;
+    height: 45px;
+    background-color: rgb(15, 15, 15);
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .block .container button img, .content .block .container .custom img {
+    width: 20px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.content .block .container .custom {
+    background-color: rgb(50, 50, 50);
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.content .block .container button:hover {
+    background-color: rgb(253, 253, 17);
+    transition: .4s ease;
+}
+
+.content .block .container .custom:hover a {
+    color: black;
+}
+
+.content .block .container button a, .content .block .container .custom a {
+    text-decoration: none;
+    color: white;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.content .block .container .custom a {
+    color: whitesmoke;
+}
+
+.content .block .back {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 275px;
+    background-color: black;
+}
+
+.content .block .back p {
+    color: rgb(255, 255, 79);
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.content .block .back h3 {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.content .block .back h3 span a{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+
+footer {
+    position: absolute;
+}
+
+
+@media (max-width: 1440px) {
+  .content .block .back {
+    margin-top: 25px;
+}
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: auto;
+    display: inline-block;
+}
+
+.content .col-6 {
+    width: 100%;
+    height: 450px;
+}
+
+.content .block {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 0;
+}
+.content .block .container {
+  margin-top: 25px;
+  width: 80%;
+}
+.content .block .back {
+  width: 100%;
+  margin-top: 75px;
+}
+
+}
+
+@media (max-width: 550px) {
+  .content .block .back p {
+    font-size: 10px;
+}
+  .logo h2 {
+    top: 5px; /* Colocar a imagem no topo */
+    right: 15px; /* Colocar a imagem à direita */
+}
+
+}
