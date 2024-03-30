@@ -5,14 +5,17 @@ import onlyfans from './assets/icons/only.png'
 import instagram from './assets/icons/instagram.png'
 import twitter from './assets/icons/twitter.png'
 
-import perfil from './assets/images/perfil.gif'
+import perfil from './assets/images/p4.jpeg'
+import exp from './assets/images/suv.png'
 
 export default function Home() {
   return (
     <div className='main'>
          <div class="content">
         <div class="col-6">
-            
+            <div className="block-col-3">
+              <img src={exp} alt="icon"></img>
+            </div>
         </div>
         <div class="block">
             <div class="container">
